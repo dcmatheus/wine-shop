@@ -4,14 +4,14 @@ import useBreakpoints from 'hooks/useBreakpoints';
 import { HeaderStyled, NavbarStyle } from 'styles';
 
 function HeaderPage() {
-  const { mdScreen } = useBreakpoints();
+  const { lgScreen } = useBreakpoints();
   return (
     <HeaderStyled>
       <NavbarStyle>
-        { !mdScreen && <BurgerMenuButton /> }
+        { !lgScreen && <BurgerMenuButton /> }
         <WineLogo />
+        { lgScreen && <PageNavBar /> }
       </NavbarStyle>
-      { mdScreen && <PageNavBar /> }
       <UserNavBar />
     </HeaderStyled>
   );
