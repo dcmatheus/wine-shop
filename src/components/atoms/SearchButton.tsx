@@ -1,15 +1,16 @@
 import useBreakpoints from 'hooks/useBreakpoints';
 import searchMobile from 'images/search-mobile.svg';
 import searchDesktop from 'images/search.svg';
+import Image from 'next/image';
 
 function SearchButton() {
-  const { smScreen } = useBreakpoints();
+  const { mdScreen } = useBreakpoints();
   return (
     <button type="button">
-      { smScreen ? (
-        <object data={searchMobile} type="image/svg+xml">Pesquisar</object>
+      { mdScreen ? (
+        <Image src={searchDesktop} alt="Pesquisar" />
       ) : (
-        <object data={searchDesktop} type="image/svg+xml">Pesquisar</object>
+        <Image src={searchMobile} alt="Pesquisar" />
       )}
     </button>
   );

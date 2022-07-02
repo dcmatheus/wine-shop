@@ -1,14 +1,10 @@
-import burgerMenu from 'image/burgerMenu.svg';
+import burgerMenu from 'images/burger-menu.svg';
+import Image from 'next/image';
 
 function BurgerMenuButton() {
   return (
     <button type="button">
-      <object
-        data={burgerMenu}
-        type="image/svg+xml"
-      >
-        Menu
-      </object>
+      <Image src={burgerMenu} alt="Menu" />
     </button>
   );
 }

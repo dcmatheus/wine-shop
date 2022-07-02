@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import cardIcon from 'images/card.svg';
 
 function CardButton() {
   return (
     <Link href="/carrinho">
-      <object data={cardIcon} type="image/svg+xml">Carrinho de compras</object>
+      <Image src={cardIcon} alt="Carrinho de compras" />
     </Link>
   );
 }

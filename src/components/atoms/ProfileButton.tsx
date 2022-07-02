@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import ProfileIcon from 'images/user.svg';
+import Image from 'next/image';
 
 function ProfileButton() {
   return (
     <Link href="/user">
-      <object data={ProfileIcon} type="image/svg+xml">Perfil</object>
+      <Image src={ProfileIcon} alt="Perfil" />
     </Link>
   );
 }
