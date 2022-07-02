@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
   font-size: 18px;
   font-weight: 400;
   @media (min-width: 1265px) {
-    padding: 0px 136px;
+    padding: 0px  136px 0px 112px;
     border-bottom: 1px solid #CCCCCC;
   }
 `;
@@ -40,6 +40,16 @@ export const NavbarStyle = styled.nav`
 
 export const NavButton = styled(DefaultButton)`
   ${({ select }: { select: boolean }) => (select ? 'color: #D14B8F; border-bottom: 4px solid #D14B8F;' : '')}
+`;
+
+export const DefaultContent = styled.main`
+  margin: 32px 18px;
+  h1 {
+    margin: 0px;
+  }
+  @media (min-width: 1024px) {
+    margin: 40px 160px;
+  }
 `;
 
 export default {};

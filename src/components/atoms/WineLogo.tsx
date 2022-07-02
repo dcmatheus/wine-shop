@@ -7,7 +7,9 @@ function WineLogo() {
   return (
     <DefaultButton>
       <Link href="/">
-        <Image src={wineLogo} alt="Wine" data-testid="logo" />
+        <span>
+          <Image src={wineLogo} alt="Wine" data-testid="logo" />
+        </span>
       </Link>
     </DefaultButton>
   );

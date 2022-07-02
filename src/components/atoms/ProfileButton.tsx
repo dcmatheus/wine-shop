@@ -7,7 +7,9 @@ function ProfileButton() {
   return (
     <DefaultButton type="button">
       <Link href="/perfil">
-        <Image src={ProfileIcon} alt="Perfil" data-testid="profile-button" />
+        <span>
+          <Image src={ProfileIcon} alt="Perfil" data-testid="profile-button" />
+        </span>
       </Link>
     </DefaultButton>
   );
