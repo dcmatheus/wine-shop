@@ -20,10 +20,10 @@
     "incremental": true,
     "baseUrl": "./src",
     "paths": {
-      "@atoms/*": ["components/atoms/*"],
-      "@molecules/*": ["components/molecules/*"],
-      "@organisms/*": ["components/organisms/*"],
-      "@templates/*": ["components/templates/*"]
+      "@atoms": ["components/atoms"],
+      "@molecules": ["components/molecules"],
+      "@organisms": ["components/organisms"],
+      "@templates": ["components/templates"]
     }
   },
   "include": [
