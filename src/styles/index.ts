@@ -25,11 +25,13 @@ export const NavbarStyle = styled.nav`
   * {
     margin: 8px 18px;
   }
+  @media (min-width: 1024px) {
+    height: 88.23px;
+  }
   @media (min-width: 1265px) {
     * {
       margin: 0px 24px;
     }
-    height: 88.23px;
   }
 `;
 
