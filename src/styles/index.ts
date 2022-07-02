@@ -27,6 +27,9 @@ export const NavbarStyle = styled.nav`
   }
   @media (min-width: 1024px) {
     height: 88.23px;
+    * {
+      height: 98%;
+    }
   }
   @media (min-width: 1265px) {
     * {
@@ -36,7 +39,7 @@ export const NavbarStyle = styled.nav`
 `;
 
 export const NavButton = styled(DefaultButton)`
-  ${({ select }: { select: boolean }) => (select ? 'color: #D14B8F; border-bottom: 4px solid #D14B8F; height: 98%;' : '')}
+  ${({ select }: { select: boolean }) => (select ? 'color: #D14B8F; border-bottom: 4px solid #D14B8F;' : '')}
 `;
 
 export default {};
