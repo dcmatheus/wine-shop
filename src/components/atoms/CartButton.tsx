@@ -5,12 +5,11 @@ import { DefaultButton } from 'styles';
 
 function CartButton() {
   return (
-    <DefaultButton type="button">
-      <Link href="/carrinho">
+    <Link href="/carrinho">
+      <DefaultButton type="button">
         <Image src={cardIcon} alt="Carrinho de compras" data-testid="cart-button" />
-      </Link>
-    </DefaultButton>
-
+      </DefaultButton>
+    </Link>
   );
 }
 

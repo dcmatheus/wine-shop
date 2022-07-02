@@ -6,7 +6,7 @@ function NavPageButton({ text, href }: { text: string, href: string }) {
   const router = useRouter();
   return (
     <Link href={href}>
-      <NavButton select={router.pathname === href} type="button" data-testid={`${text}-nav-page-button`}>{ text }</NavButton>
+      <NavButton select={router.asPath === href} type="button" data-testid={`${text}-nav-page-button`}>{ text }</NavButton>
     </Link>
   );
 }
