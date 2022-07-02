@@ -1,21 +1,34 @@
-import { useMediaQuery } from 'react-responsive';
-import {
-  sm, md, lg, xl, xxl,
-} from 'utils/breakpoints.json';
+import { useState, useEffect } from 'react';
 
 function useBreakpoints() {
-  const smScreen = useMediaQuery({ minWidth: sm });
-  const mdScreen = useMediaQuery({ minWidth: md });
-  const lgScreen = useMediaQuery({ minWidth: lg });
-  const xlScreen = useMediaQuery({ minWidth: xl });
-  const xxlScreen = useMediaQuery({ minWidth: xxl });
-  return {
-    smScreen,
-    mdScreen,
-    lgScreen,
-    xlScreen,
-    xxlScreen,
+  const defaultScreens = {
+    smScreen: false,
+    mdScreen: false,
+    lgScreen: false,
+    xlScreen: false,
+    xxlScreen: false,
   };
+
+  const [screens, setScreen] = useState(defaultScreens);
+
+  useEffect(() => {
+    const updatedMediasQuery = () => ({
+      smScreen: window.innerWidth >= 640,
+      mdScreen: window.innerWidth >= 768,
+      lgScreen: window.innerWidth >= 1024,
+      xlScreen: window.innerWidth >= 1280,
+      xxlScreen: window.innerWidth >= 1536,
+    });
+
+    setScreen(updatedMediasQuery());
+
+    const listener = () => setScreen(updatedMediasQuery());
+
+    window.addEventListener('resize', listener);
+
+    return () => window.removeEventListener('resize', listener);
+  }, []);
+  return screens;
 }
 
 export default useBreakpoints;
