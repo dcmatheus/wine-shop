@@ -1,2 +1,2 @@
-export { default as PageNavBar } from './PageNavBar';
-export { default as UserNavBar } from './UserNavBar';
+export { default as PageNavBar } from './PageNavbar';
+export { default as UserNavBar } from './UserNavbar';

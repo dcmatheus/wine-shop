@@ -1,15 +1,16 @@
 import { CartButton, ProfileButton, SearchButton } from '@atoms';
 import useBreakpoints from 'hooks/useBreakpoints';
+import { NavbarStyle } from 'styles';
 
-function UserNavBar() {
+function UserNavbar() {
   const { mdScreen } = useBreakpoints();
   return (
-    <nav>
+    <NavbarStyle>
       <SearchButton />
       { mdScreen && <ProfileButton /> }
       <CartButton />
-    </nav>
+    </NavbarStyle>
   );
 }
 
-export default UserNavBar;
+export default UserNavbar;

@@ -1,9 +1,15 @@
 import Image from 'next/image';
 import wineLogo from 'images/wine-logo.svg';
+import { DefaultButton } from 'styles';
+import Link from 'next/link';
 
 function WineLogo() {
   return (
-    <Image src={wineLogo} alt="Wine" data-testid="logo" />
+    <DefaultButton>
+      <Link href="/">
+        <Image src={wineLogo} alt="Wine" data-testid="logo" />
+      </Link>
+    </DefaultButton>
   );
 }
 

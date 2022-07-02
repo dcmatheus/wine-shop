@@ -1,11 +1,12 @@
 import burgerMenu from 'images/burger-menu.svg';
 import Image from 'next/image';
+import { DefaultButton } from 'styles';
 
 function BurgerMenuButton() {
   return (
-    <button type="button">
+    <DefaultButton type="button">
       <Image src={burgerMenu} alt="Menu" data-testid="burger-menu-button" />
-    </button>
+    </DefaultButton>
   );
 }
 
