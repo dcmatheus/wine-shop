@@ -2,12 +2,13 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    viewportWidth: 360,
+    viewportHeight: 640
   },
 
   component: {
+    viewportWidth: 360,
+    viewportHeight: 640,
     devServer: {
       framework: "next",
       bundler: "webpack",

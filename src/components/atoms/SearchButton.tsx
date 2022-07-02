@@ -8,9 +8,9 @@ function SearchButton() {
   return (
     <button type="button">
       { mdScreen ? (
-        <Image src={searchDesktop} alt="Pesquisar" />
+        <Image src={searchDesktop} alt="Pesquisar" data-testid="search-button" />
       ) : (
-        <Image src={searchMobile} alt="Pesquisar" />
+        <Image src={searchMobile} alt="Pesquisar" data-testid="search-button" />
       )}
     </button>
   );

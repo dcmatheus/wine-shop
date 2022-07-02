@@ -1,4 +1,4 @@
-import { CardButton, ProfileButton, SearchButton } from '@atoms';
+import { CartButton, ProfileButton, SearchButton } from '@atoms';
 import useBreakpoints from 'hooks/useBreakpoints';
 
 function UserNavBar() {
@@ -7,7 +7,7 @@ function UserNavBar() {
     <nav>
       <SearchButton />
       { mdScreen && <ProfileButton /> }
-      <CardButton />
+      <CartButton />
     </nav>
   );
 }
