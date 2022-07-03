@@ -1,8 +1,14 @@
+import QuantityProducts from 'components/atoms/QuantityProducts';
 import HeaderPage from 'components/organisms/HeaderPage';
+import WineList from 'components/organisms/WineList';
 
 function HomePage() {
   return (
-    <HeaderPage />
+    <>
+      <HeaderPage />
+      <QuantityProducts />
+      <WineList />
+    </>
   );
 }
 
