@@ -4,7 +4,7 @@
 
 </div>
 
-<img src="assets/app1.png" width="75%" />
+<img src="assets/app1.png" width="50%" />
 <img src="assets/app2.png" width="20%"/>
 
 Desenvolvido para o desafio técnico Front End da empresa [Wine](https://www.wine.com.br/).
