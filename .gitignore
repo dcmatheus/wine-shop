@@ -42,3 +42,6 @@ yarn-error.log*
 
 # VSCode
 .vscode/
+
+# Useful files during development
+cardIconTest/
