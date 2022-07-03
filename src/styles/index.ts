@@ -80,3 +80,86 @@ export const AddButton = styled(DefaultButton)`
   text-align: center;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 `;
+
+export const Card = styled.div`
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 8px;
+  height: 100%;
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .discountField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .old-price {
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #888888;
+  }
+
+  .discount {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #F79552;
+    border-radius: 2px;
+    padding: 1px 4px;
+    margin-left: 4px;
+  }
+
+  .member-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    .text {
+      font-weight: 400;
+      font-size: 15px;
+      text-transform: uppercase;
+      width: 3rem;
+      color: #555555;
+    }
+    .price {
+      font-weight: 800;
+      font-size: 16px;
+      color: #C81A78;
+      .highlight {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .nonmember-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #888888;
+    .price {
+      margin-left: 3px;
+    }
+  }
+`;
