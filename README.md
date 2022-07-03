@@ -4,8 +4,7 @@
 
 </div>
 
-<div style="display:flex">
-  <img src="assets/app1.png" width="80%" />
+<div align='center'>
   <img src="assets/app2.png" width="20%"/>
 </div>
 
