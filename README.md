@@ -45,7 +45,7 @@ Desenvolvido para o desafio técnico Front End da empresa [Wine](https://www.win
 
 - #### Next JS;
 
-- #### Tailwind/TailwindStyledComponents: Framework utilizado na estilização dos componentes;
+- #### StyledComponents: Framework utilizado na estilização dos componentes;
 
 - #### Eslint: Ferramenta que mantém o código seguindo os principais padrões da comunidade;
 
