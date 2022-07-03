@@ -4,8 +4,11 @@
 
 </div>
 
-<img src="assets/app1.png" width="50%" />
-<img src="assets/app2.png" width="20%"/>
+<div style="display:flex">
+  <img src="assets/app1.png" width="80%" />
+  <img src="assets/app2.png" width="20%"/>
+</div>
+
 
 Desenvolvido para o desafio técnico Front End da empresa [Wine](https://www.wine.com.br/).
 
