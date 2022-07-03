@@ -52,4 +52,18 @@ export const DefaultContent = styled.main`
   }
 `;
 
-export default {};
+export const QuantityProductsStyled = styled.div`
+  font-weight: 400;
+  font-size: 18px;
+  color: #262626;
+  padding: 20px 0px;
+  margin: 10px 20px;
+  border-bottom: solid 1px #D5D5D5;
+  span {
+    color: #1D1D1B;
+    font-weight: 700;
+  }
+  @media (min-width: 1024px) {
+    border-bottom: none;
+  }
+`;

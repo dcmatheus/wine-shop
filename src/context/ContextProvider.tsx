@@ -8,7 +8,6 @@ function ContextProvider({ children }: { children: React.ReactNode }) {
     response,
     setResponse,
   }), [response]);
-  console.log(response);
   return (
     <context.Provider value={contextValue}>
       {children}
