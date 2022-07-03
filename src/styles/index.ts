@@ -67,3 +67,16 @@ export const QuantityProductsStyled = styled.div`
     border-bottom: none;
   }
 `;
+
+export const AddButton = styled(DefaultButton)`
+  background-color: #7EBC43;
+  padding: 12px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  text-align: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+`;
